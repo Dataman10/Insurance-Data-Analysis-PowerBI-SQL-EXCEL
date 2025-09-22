@@ -1,97 +1,91 @@
+# Insurance Data Analysis Project
 
-# Project Title
+## Project Overview
 
-A brief description of what this project does and who it's for
+This project focuses on analyzing an insurance dataset from **INSURANCE PVT. LTD.** to uncover insights related to policies, premiums, claims, and customer feedback. The analysis combines **data aggregation, visualization, and sentiment analysis** to provide a complete overview of the insurance operations and customer satisfaction.
 
+## Key Features
 
-# Insurance Data Analysis-Dashboard
+* Analyze **policy distribution** by type (Auto, Health, Home, Life, Travel)
+* Aggregate **Premium Amount**, **Coverage Amount**, and **Claim Amount** by different categories
+* Track **claims status** (Rejected, Settled, Pending) and analyze **number of claims**
+* Study **age and gender-based claim patterns**
+* Count **active vs inactive policies**
+* Analyze **customer feedback**, score, sentiment, and trends
 
-### Dashboard Link : https://app.powerbi.com/links/bcac2eWJYA?ctid=9f45c503-f240-4a87-85bd-b1bd5d3902f2&pbi_source=linkShare&bookmarkGuid=d0d3458b-8178-4f5a-be2f-48f4b37a4a5a
+## Dataset Columns
 
-## Problem Statement
+* `PolicyNumber`, `CustomerID`, `ClaimNumber`
+* `PremiumAmount`, `CoverageAmount`, `ClaimAmount`
+* `Number of Claims By Claims Status` (Rejected, Settled, Pending)
+* `PolicyType` (Auto, Health, Home, Life, Travel)
+* `Age`, `Gender`, `Age Group`
+* `PolicyStartDate`, `PolicyEndDate`
+* `ClaimStatus`, `ClaimDate`
+* `Customer Feedback`, `Score`, `Sentiment`
 
-Businesses often struggle to identify:
+## Tools & Technologies
 
-Which products contribute the most to revenue 📈
+* **Language:** Python
+* **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, NLTK/TextBlob (for sentiment analysis)
+* **Techniques:** Data Cleaning, Aggregation, Exploratory Data Analysis (EDA), Visualization, Sentiment Analysis
 
-Seasonal or regional trends in sales 🌍
+## Analysis Highlights
 
-Customer purchase patterns 🛒
+* **Premium Amount by Policy Type:** Travel insurance has the highest premium amount, followed by Health and Auto.
+* **Claim Amount by Age Groups:** Adults contribute the highest claim amount, followed by Elder and Young Adult.
+* **Active vs Inactive Policies:** 58.13% policies are active, 41.87% inactive.
+* **Claims Status Analysis:**
 
-Areas where discounting impacts profitability 💸
+  * Rejected: 4.4K
+  * Settled: 3.4K
+  * Pending: 2.3K
+* **Customer Feedback Insights:**
 
-The goal of this project is to provide a data-driven approach to improve decision-making in sales strategy and optimize overall business performance.
+  * Most customers are satisfied with claim processes and policy coverage.
+  * Sentiment analysis highlights areas needing improvement, such as customer support response time.
 
+## Project Structure
 
-About the Project
-An interactive PowerBI dashboard enabling in-depth analysis of insurance data for PRISM Insurance Pvt. Ltd. Visualizes claims, policy types, customer feedback, and business KPIs for actionable insights and business decision support.Insurance-Project.pdf
+```
+Insurance-Data-Analysis/
+│
+├── data/                 # Dataset CSV files
+├── notebooks/            # Jupyter notebooks with analysis code
+├── visuals/              # Plots and visualizations
+├── README.md             # Project documentation
+└── requirements.txt      # Python libraries used
+```
 
-Features
-Visual breakdown of claims by status (Rejected, Settled, Pending)Insurance-Project.pdf
+## How to Run
 
-Premium and coverage distribution across policy types (Travel, Health, Life, Auto, Home)Insurance-Project.pdf
+1. Clone the repository:
 
-Demographic segmentation of claims by gender and age groupInsurance-Project.pdf
+```bash
+git clone https://github.com/your-username/Insurance-Data-Analysis.git
+```
 
-Sentiment analysis of customer feedback and satisfactionInsurance-Project.pdf
+2. Navigate to the project directory:
 
-Dynamic filtering for policies, claims, and feedback
+```bash
+cd Insurance-Data-Analysis
+```
 
-Comparative trend graphs for KPIs
+3. Install dependencies:
 
-Demo
-To preview, open the .pbix dashboard in PowerBI Desktop and connect the provided datasets.Insurance-Project.pdf
+```bash
+pip install -r requirements.txt
+```
 
-Data Sources
-InsuranceData.csv: Policy and claims data
+4. Open the Jupyter notebook and run analysis:
 
-Insurance-Customer-Feedback.xlsx: Customer feedback and sentiment scores
+```bash
+jupyter notebook
+```
 
-Insurance-Project.pdf: Documentation and project detailsInsurance-Project.pdf
+## Author
 
-Getting Started
-Clone or download the repository and all attached files.
-
-Open PowerBI Dashboard.pbix in PowerBI Desktop.
-
-Attach the CSV/XLSX data sources from Data Source Settings.
-
-Refresh data to visualize the latest insights.
-
-Usage
-Use interactive visuals, slicers, and filters for custom insights.
-
-Analyze business metrics by age, gender, and product.
-
-Review customer feedback analytics for service enhancement.
-
-Export visual reports directly from PowerBI.Insurance-Project.pdf
-
-Analysis Methodology
-Data aggregation and cleaning from raw insurance records and feedback
-
-Calculation of key KPIs like Premium, Coverage, and Claim Amounts by product segment
-
-Demographic analysis with age/gender splits and product mapping
-
-DAX measures for robust filtering and data drill-downInsurance-Project.pdf
-
-Contributing
-Fork the repository or download dashboard files.
-
-Propose enhancements via pull requests or email.
-
-Ensure data files are present for all tests and visuals.
-
-License
-For private, educational, or internal analytics use only. For redistribution, please contact the project owner.Insurance-Project.pdf
-
-Contact
-Name: Hitesh Moota
-Designation: Data Analyst
-Email: hiteshdataman@gmail.com  
-
-
-
-
-
+**Hitesh Moota**
+Data Analyst
+📧 [hiteshdataman@gmail.com](mailto:hiteshdataman@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/hitesh-moota)
